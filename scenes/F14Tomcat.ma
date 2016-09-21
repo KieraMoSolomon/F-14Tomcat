@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: F14Tomcat.ma
-//Last modified: Wed, Sep 21, 2016 12:46:20 PM
+//Last modified: Wed, Sep 21, 2016 12:47:52 PM
 //Codeset: UTF-8
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
