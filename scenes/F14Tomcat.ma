@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: F14Tomcat.ma
-//Last modified: Fri, Sep 23, 2016 10:31:27 AM
+//Last modified: Fri, Sep 23, 2016 10:33:03 AM
 //Codeset: UTF-8
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -13,8 +13,8 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "D9AC48E0-5E4A-C1FB-41B7-038676F8CCE2";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 198.23583432443968 1885.8223398495604 476.88057059052699 ;
-	setAttr ".r" -type "double3" -76.538352729523723 -4.6000000000017032 1.1965622780811906e-15 ;
+	setAttr ".t" -type "double3" 581.18075007995321 1328.8546123724734 1414.597628702644 ;
+	setAttr ".r" -type "double3" -44.138352729523973 13.79999999999858 0 ;
 	setAttr ".rp" -type "double3" 0 -2.2737367544323206e-13 4.5474735088646412e-13 ;
 	setAttr ".rpt" -type "double3" 3.0116036207925934e-14 2.0230070192570177e-13 5.2163205114230441e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -1008,7 +1008,7 @@ createNode mesh -n "polySurfaceShape3" -p "transform2";
 	setAttr ".cdvm[0]"  0 1 1;
 createNode transform -n "polySurface2" -p "pCube3";
 	rename -uid "C5779A60-3C4A-5324-26A3-6793C6D9D933";
-	setAttr ".t" -type "double3" 0.55776408218920848 0.33913686073246296 0.079352486048853074 ;
+	setAttr ".t" -type "double3" 0.55776408218920848 0.40553104518547672 0.079352486048853074 ;
 	setAttr ".s" -type "double3" 1.1194469161254608 0.56809007490425123 1.0667576715870932 ;
 createNode mesh -n "Folding_wing" -p "polySurface2";
 	rename -uid "E7893E23-B04C-5515-873A-9D92DDF992A7";
