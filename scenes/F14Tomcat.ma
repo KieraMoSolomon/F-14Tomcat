@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: F14Tomcat.ma
-//Last modified: Fri, Sep 23, 2016 12:41:24 PM
+//Last modified: Fri, Sep 23, 2016 12:44:40 PM
 //Codeset: UTF-8
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -12,8 +12,8 @@ fileInfo "osv" "Mac OS X 10.11.6";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "D9AC48E0-5E4A-C1FB-41B7-038676F8CCE2";
-	setAttr ".t" -type "double3" 1726.9818375170939 -70.834173063550651 578.35233429062407 ;
-	setAttr ".r" -type "double3" 0.861647270483475 82.599999999998133 -3.8585299667389747e-16 ;
+	setAttr ".t" -type "double3" 1350.7775278167201 215.83105399246188 1415.9852145218224 ;
+	setAttr ".r" -type "double3" -8.7383527295162882 51.399999999998023 0 ;
 	setAttr ".rp" -type "double3" 0 -2.2737367544323206e-13 4.5474735088646412e-13 ;
 	setAttr ".rpt" -type "double3" 3.0116036207925934e-14 2.0230070192570177e-13 5.2163205114230441e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
