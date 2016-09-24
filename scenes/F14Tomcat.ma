@@ -1,6 +1,6 @@
 //Maya ASCII 2016 scene
 //Name: F14Tomcat.ma
-//Last modified: Fri, Sep 23, 2016 08:14:25 PM
+//Last modified: Fri, Sep 23, 2016 08:21:22 PM
 //Codeset: 1252
 requires maya "2016";
 currentUnit -l centimeter -a degree -t film;
@@ -12,15 +12,15 @@ fileInfo "osv" "Microsoft Windows 8 Home Premium Edition, 64-bit  (Build 9200)\n
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "D9AC48E0-5E4A-C1FB-41B7-038676F8CCE2";
-	setAttr ".t" -type "double3" 108.07214673691669 189.65151065609831 1530.7642825880794 ;
-	setAttr ".r" -type "double3" -5.738352729504947 -3.7999999999995149 -2.4902833117159579e-017 ;
+	setAttr ".t" -type "double3" 177.98859000174147 526.60028860463933 2444.2784369927067 ;
+	setAttr ".r" -type "double3" -12.338352729494016 1.00000000000389 2.4851868508880389e-017 ;
 	setAttr ".rp" -type "double3" 0 -2.2737367544323206e-013 4.5474735088646412e-013 ;
 	setAttr ".rpt" -type "double3" 3.0116036207925934e-014 2.0230070192570177e-013 5.2163205114230441e-014 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "044C9A9B-CB49-ECAC-4A32-A390FCEFECF1";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 1712.6749729195406;
+	setAttr ".coi" 2675.5450435155358;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
