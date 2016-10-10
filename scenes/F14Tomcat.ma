@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: F14Tomcat.ma
-//Last modified: Mon, Oct 10, 2016 08:58:17 AM
+//Last modified: Mon, Oct 10, 2016 09:07:19 AM
 //Codeset: UTF-8
 requires maya "2017";
 requires "stereoCamera" "10.0";
@@ -14,19 +14,19 @@ fileInfo "osv" "Mac OS X 10.11.6";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "D9AC48E0-5E4A-C1FB-41B7-038676F8CCE2";
-	setAttr ".t" -type "double3" -188.47325471603295 786.56266804686084 -830.89646810134241 ;
-	setAttr ".r" -type "double3" -48.338352728539121 1246.5999999999642 0 ;
+	setAttr ".t" -type "double3" 201.40051571329758 673.02207686970564 -490.61796075598221 ;
+	setAttr ".r" -type "double3" -70.538352729786254 1307.7999999999615 0 ;
 	setAttr ".rp" -type "double3" 0 -2.2737367544323206e-13 4.5474735088646412e-13 ;
 	setAttr ".rpt" -type "double3" 3.0116036207925934e-14 2.0230070192570177e-13 5.2163205114230441e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "044C9A9B-CB49-ECAC-4A32-A390FCEFECF1";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 1158.261861822348;
+	setAttr ".coi" 700.51302769016411;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -228.62443365403226 23.351029551769184 -514.33912998089636 ;
+	setAttr ".tp" -type "double3" 363.70886993408203 9.9575691223144531 -327.92628479003906 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "DAB382DD-B34B-2D11-D689-A59BCA56AE50";
@@ -2290,6 +2290,9 @@ createNode mesh -n "polySurfaceShape25" -p "polySurface45";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "polySurface46" -p "polySurface45";
 	rename -uid "C7A30730-0C4A-8E9B-5032-16B40A683CE7";
+	setAttr ".r" -type "double3" -2.5373382067209835 0.14243022351732162 1.7225693043122694 ;
+	setAttr ".rp" -type "double3" 375.7791748046875 14.799833297729492 -337.15802001953125 ;
+	setAttr ".sp" -type "double3" 375.7791748046875 14.799833297729492 -337.15802001953125 ;
 createNode mesh -n "polySurfaceShape26" -p "polySurface46";
 	rename -uid "F789E990-6846-747F-F9D5-0EB695DCF8A9";
 	setAttr -k off ".v";
@@ -2301,6 +2304,14 @@ createNode mesh -n "polySurfaceShape26" -p "polySurface46";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "locator2" -p "polySurface45";
+	rename -uid "245A8977-CF4F-C730-7D05-DE9B12DD9AFC";
+	setAttr ".t" -type "double3" 534.10014745802721 8.4603830125304924 -424.11262859706034 ;
+	setAttr ".r" -type "double3" -1.3304098566685563 28.306490964805921 -2.7845466328575359 ;
+	setAttr ".s" -type "double3" 54.783310939575195 54.783310939575195 54.783310939575195 ;
+createNode locator -n "locatorShape2" -p "locator2";
+	rename -uid "6A83CE21-6047-AA2E-28A5-A2BFF7EF9DB8";
+	setAttr -k off ".v";
 createNode transform -n "transform12" -p "polySurface24";
 	rename -uid "F51497F4-E247-A9B9-2F4F-608023DE8C2D";
 	setAttr ".v" no;
